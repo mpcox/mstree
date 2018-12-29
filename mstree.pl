@@ -31,9 +31,9 @@ GetOptions(
 ); 
 
 # usage information
-my $usage = "Error: correct usage is: mstree -g1  number of individuals in population one
-                                -g2  number of individuals in population two
-                                [first population must be selected group]\n";
+my $usage = "Error: correct usage is: mstree -g1  number of individuals in group one
+                                -g2  number of individuals in group two
+                                [group 1 must be the selected group]\n";
 
 die $usage if ( !$group_one || !$group_two || $group_one < 1 || $group_two < 1 );
 
